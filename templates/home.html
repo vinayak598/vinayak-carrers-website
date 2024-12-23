@@ -16,12 +16,16 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="text-center mt-2 mb-4"">vinayak careers</h1>
+    <h1 class="text-center mt-2 mb-4"">{{company_name}} careers</h1>
     <img class=".img-fluid" id="banner" src="https://428e6500-6827-4498-a7d6-c2b4195b70c4-00-36id4pa62gvye.pike.replit.dev/static/banner.jpg" height='320' width='800'>
     <h2 class="text-center mt-2 mb-4">About carrers</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vel ex et sagittis. Sed ut risus risus. Cras at lorem sed leo pulvinar finibus eget id arcu. Phasellus et libero id eros efficitur scelerisque. Quisque ac massa quis metus tincidunt vulputate. Sed consequat arcu vitae nisi lacinia, ut hendrerit sem tincidunt. Mauris eget odio justo. Donec rhoncus dui ac velit varius, ullamcorper commodo leo placerat. Ut eu lorem sit amet orci placerat cursus. Curabitur magna nulla, vestibulum id auctor id, sollicitudin vel diam.</p>
     <h2 class="text-center mt-2 mb-4"">Open positions</h2>
-    <p>TODO - Show the jobs here</p>
+    <p>
+      {%for job in jobs%}
+      {%include 'jobitem.html'%}
+      {%endfor%}
+    </p>
       <div class="text-center">
     <button type="button" class="btn btn-primary btn-sm">Contact Us</button>
          <p class="mt-4"">copyright 2024, vinayak</p>
